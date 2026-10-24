@@ -1,0 +1,13 @@
+# NON-SENSITIVE configuration only. Never put passwords here.
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: app-config
+  namespace: config-demo
+data:
+  APP_NAME: "config-secrets-demo"
+  APP_ENV: "production"
+  LOG_LEVEL: "info"
+  DB_HOST: "postgres"
+  DB_PORT: "5432"
+  DB_NAME: "appdb"
